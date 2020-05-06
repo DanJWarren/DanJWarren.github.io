@@ -1,0 +1,186 @@
+/* 
+ *      File: styleSheetDanielWarrenUpdated.html
+ *      Author: Daniel Warren
+ *      Creation: 3/2/19
+ */
+
+body {
+        background-color: #DAE2DF;
+        font-family: 'Montserrat', sans-serif;
+        margin: 0px;
+}
+
+a {
+        color: #6F8C8E;
+        text-align: center;
+        text-decoration: none;
+}
+
+a:hover {
+        background-color: #EDECF4;
+}
+
+a.footer {
+        color: black;
+}
+
+a.navText {
+        color: #DCDCE2;
+        padding: 0.8% 0.5%;
+        text-align: center;
+        display: inline-block;
+}
+
+a.navText:hover {
+        color: black;
+        background-color: #DCDCE2;
+}
+
+button {
+        border: none;
+    outline:none;
+}
+
+.navButtonDiv {
+        display: none;
+}
+
+nav {
+        background-color: #6D696A;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        padding: 0% 5%;
+        font-size: 110%;
+}
+
+nav div.navTextHeader > span {
+        color: #7C9B9E;
+        display: inline-block;
+        padding: 10px 10px;
+        width: 100%;
+        text-align: left;
+        white-space: nowrap;
+        overflow: hidden;
+        position: relative;
+}
+
+.navTextHeader {
+        margin: 0% 10% 0% 0%;
+        position: relative;
+        /*font-weight: bold;*/
+}
+
+nav div.navContent > a {
+        color: #FFFFFF;
+        padding: 10px 40px;
+        width: 80%;
+}
+
+nav > div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+}
+
+div.Content {
+        background-color: #F8F8FF;
+        border-radius: 5px;
+        padding: 0.5% 5%;
+    margin: 5% 10%;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+div.table {
+        margin: 0%;
+        overflow-x: auto;
+        padding: 0%;
+}
+
+header {
+        border-radius: 5px;
+        padding: 0.5% 0% 0% 0%;
+}
+
+section {
+        padding: 2% 0%;
+}
+
+section img {
+        padding: 0%;
+        border-radius: 2%;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+figure {
+        float: right;
+        padding: 1.5%;
+        padding-top: 0;
+        margin-top: 0;
+}
+
+ul {
+        list-style-type: circle;
+}
+
+ol {
+        list-style-type: lower-greek;
+}
+
+table {
+        width: 100%;
+}
+
+td, th {
+  padding: 1% 1%;
+  border: 1px solid #EDECF4;
+}
+
+tr:nth-child(even){
+        background-color: #EDECF4;
+}
+
+footer, h1 {
+        text-align: center;
+}
+
+@media all and (max-width: 800px) {
+        .navContent {
+                flex-direction: column;
+                padding: 0% 5%;
+                display: none;
+        }
+
+        nav div.navContent > a {
+                padding: 5px 0px;
+                width: 100%;
+        }
+
+        .activeNav {
+                display: block;
+        }
+
+        .navHeader {
+                flex-direction: row;
+        }
+
+        nav {
+                flex-direction: column;
+        }
+
+        .navButtonDiv {
+                display: inline-block;
+        }
+
+        section img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+        }
+
+        figure {
+                float: none;
+                margin: 0%;
+        }
+}

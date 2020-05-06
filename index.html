@@ -1,20 +1,249 @@
+<!-- 
+        File: http://cgi.csc.liv.ac.uk/~sgdwarre/DanielWarren.html
+        Author: Daniel Warren
+        Creation: 3/2/19
+-->
+
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Daniel Warren</title>
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-	</head>
-	<body>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Dan!</h1>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="https://github.com/DanJWarren">github.com/DanJWarren</a></li>
-			<li><a href="https://www.linkedin.com/in/d-warren/">Linkedin</li>	
-		</ul>
-		</footer>
-	</body>
+
+<html lang="en-GB">
+
+<head>
+        <title>Daniel Warren</title>
+        
+        <meta charset="UTF-8">
+        <meta name="author" content="Daniel Warren">
+        <meta name="description" content="A brief introduction about me (Daniel Warren). This document contains information about my: Personal information; career goal; education; work experience; skills; and interests">
+        <meta name="keywords" content="Liverpool, university of Liverpool, biology, mathematics">
+        <meta name="viewport" content="width=device-width, initial-scale=1" >
+        
+        <link rel="stylesheet" type="text/css" title="styleSheet" href="styleSheetDanielWarrenUpdated.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="hamburgers.css" rel="stylesheet">
+        
+        <script>
+                function toggle() {
+                  var x = document.getElementById("navContent");
+                  if (x.className === "navContent") {
+                        x.className += " activeNav";
+                        document.getElementById("navButton").className = "hamburger hamburger--spring is-active";
+
+                  } else {
+                  
+                        x.className = "navContent"
+                        document.getElementById("navButton").className = "hamburger hamburger--spring";
+
+                  }
+                }
+        </script>
+</head>
+
+<body>
+        <nav>
+                <div class="navHeader">
+                        <div class="navTextHeader">
+                                <span>Daniel Warren</span>
+                        </div>
+                        <div class="navButtonDiv">
+                                <button id="navButton" class="hamburger hamburger--spring" type="button" onclick="toggle()">
+                                  <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                  </span>
+                                </button>
+                        </div>
+                </div>
+
+               <div class="navContent" id="navContent">
+                        <a class="navText" href="#education" title="Education" onclick="toggle()">Education</a>
+                        <a class="navText" href="#experience" title="Experience" onclick="toggle()">Experience</a>
+                        <a class="navText" href="#contactInfo" title="Contact" onclick="toggle()">Contact</a>
+                </div>
+        </nav>
+
+        <div class="Content">
+                <section id="personalInfo">
+                        <h2>Personal Information</h2>
+
+      <figure>
+                                <img id="imgOfMe" src="websiteImage.jpeg" title="Me" alt="A picture of me" height="226" width="170"/>
+                        </figure>
+
+                        <p>Hi there, my name is Daniel. I'm a 22 year old computer science
+                        postgraduate student from Liverpool. I'm interested in mathematical
+                        and computational tools that assist in our understanding of biological
+                        systems. If you would like to contact me send me an <a href="#contactInfo" title="Email">email</a>.
+                        </p>
+                </section>
+
+                <section id="education">
+                        <h2>Education</h2>
+                        <p>
+                        2018 - present:<br>&emsp;       MSc <a href ="https://www.liverpool.ac.uk/study/postgraduate-taught/taught/computer-science-msc/overview/" 
+                        target="_blank" title="Computer Science course information">Computer Science</a>, <a href ="https://www.liverpool.ac.uk/" 
+                        target="_blank" title="University of Liverpool homepage">University of Liverpool</a>
+                        </p>
+                        <p>
+                        2014 - 2018:<br>&emsp; BSc Mathematics and Biological Sciences (1st class Hons),
+                        <a href="https://www.liverpool.ac.uk/" 
+                        target="_blank" title="University of Liverpool homepage">University of Liverpool</a>
+                        </p>
+                </section>
+
+                <section id="experience">
+                        <h2>Experience</h2>
+                        <div class="table">
+                                <table>
+                                        <tr>
+                                                <td>
+                                                        2018 - Present:
+                                                </td>
+                                                <td>
+                                                        <strong>Laboratory Demonstrator</strong>, <em>University of Liverpool</em>
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                                <td>
+                                                        2017 - Present:
+                                                </td>
+                                                <td>
+                                                        <strong>Student advocate</strong>, <a href="https://www.liverpool.ac.uk/widening-participation/" target="_blank" title="Widening Participation and Outreach"><em>Widening Participation and Outreach</em></a>
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                                <td>2013 - Present:</td>
+                                                <td>
+                                                        <strong>Mathematics Tutor</strong>
+                                                </td>
+                                        </tr>
+                                        <tr>
+
+
+                                                <td>
+                                                        2018:
+                                                </td>
+                                                <td>
+                                                        <strong>Research internship</strong>, <a href="https://www.liverpool.ac.uk/mathematical-sciences/research/centre-for-mathematics-in-healthcare/" target="_blank" title="Liverpool Centre for Mathematics in Healthcare"><em>Liverpool Centre for Mathematics in Healthcare</em></a>
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                                <td>
+                                                        2017 - 2018:
+                                                </td>
+                                                <td>
+                                                        <strong>Undergraduate research project</strong>, <em>School of Life Sciences, University of Liverpool</em>
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                                <td>
+                                                        2017 - 2018:
+                                                </td>
+                                                <td>
+                                                        <strong>Science Editor</strong>, <a href="https://www.thesphinx.co.uk/" target="_blank" title="The Sphinx newspaper"><em>The Sphinx newspaper</em></a>
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                                <td>
+                                                        2017:
+                                                </td>
+                                                <td>
+                                                        <strong>Research internship</strong>, <em>Department of Mathematics, University of Liverpool</em>
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                                <td>
+                                                        2016 - 2017:
+                                                </td>
+                                                <td>
+                                                        <strong>Student-staff liaison committee member</strong>, <em>University of Liverpool</em>
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                                <td>
+                                                        2015:
+                                                </td>
+                                                <td>
+                                                        <strong>Gatsby Plant Science Programme</strong>, <a href="http://www.gatsby.org.uk/plant-science" target="_blank" title="Gatsby Foundation"><em>Gatsby Foundation</em></a>
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                                <td>
+                                                        2014:
+                                                </td>
+                                                <td>
+                                                        <strong>Nuffield Research Project</strong>, <a href="http://www.nuffieldfoundation.org/nuffield-research-placements" target="_blank" title="Nuffield Foundation"><em>Nuffield Foundation</em></a>
+                                                </td>
+                                        </tr>
+                                </table>
+                        </div>
+                </section>
+
+                <!--
+                <section id="skills">
+                        <h2>Skills</h2>
+                        <div class="skillsTable">
+                                <table class="skills">
+                                        <tr>
+                                                <th>Confident</th>
+                                                <th>Intermediate</th>
+                                        </tr>
+                                        <tr>
+                                                <td>CSS</td>
+                                                <td>LaTex</td>
+                                        </tr>
+                                        <tr>
+                                                <td>HTML</td>
+                                                <td>Maple</td>
+                                        </tr>
+                                        <tr>
+                                                <td>Java</td>
+                                                <td>MatLab</td>
+                                        </tr>
+                                        <tr>
+                                                <td>JavaScript</td>
+                                                <td>XPP-Auto</td>
+                                        </tr>
+                                        <tr>
+                                                <td>Microsoft Office</td>
+                                                <td rowspan="5"></td>
+                                        </tr>
+                                        <tr>
+                                                <td>PHP</td>
+                                        </tr>
+                                        <tr>
+                                                <td>Python</td>
+                                        </tr>
+                                        <tr>
+                                                <td>R</td>
+                                        </tr>
+                                        <tr>
+                                                <td>SPSS</td>
+                                        </tr>
+                                </table>
+                        </div>
+                </section>
+                -->
+
+                <section id="contactInfo">
+                <h2>Contact</h2>
+                If you would like to contact me, please perform the following substitutions:<br/>
+                <ol>
+                        <li>sgdwarre</li>
+                        <li>liverpool</li>
+                        <li>ac</li>
+                        <li>uk</li>
+                        <li>@</li>
+                        <li>.</li>
+                </ol>
+                My email address = &alpha;&epsilon;&beta;&zeta;&gamma;&zeta;&delta;
+                </section>
+        </div>
+
+        <footer>
+                <small>&copy; <a class="footer" href="" title="Top of page" >Daniel Warren</a><br>
+    <!--#config timefmt="%e %B %Y" -->
+                Last modification <!--#flastmod  file="DanielWarren.html" -->
+                </small>
+        </footer>
+</body>
+
 </html>
